@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vida Sem Pecado</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700;900&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+    font-family:'Montserrat',sans-serif;
+    background:#000;
+    color:#fff;
+    overflow-x:hidden;
+}
+nav{
+    position:fixed;
+    width:100%;
+    top:0;
+    background:#000;
+    display:flex;
+    justify-content:space-between;
+    padding:15px 40px;
+    z-index:1000;
+    border-bottom:1px solid #222;
+}
+nav h2{color:#FFD700}
+nav a{
+    color:#fff;
+    text-decoration:none;
+    margin-left:20px;
+    font-weight:500;
+    transition:0.3s;
+}
+nav a:hover{color:#FFD700}
+header{
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    background:linear-gradient(180deg,#000,#111);
+}
+h1{
+    font-size:4em;
+    color:#FFD700;
+}
+p{
+    max-width:600px;
+    margin-top:20px;
+    opacity:0.8;
+}
+.btn{
+    margin-top:30px;
+    padding:15px 40px;
+    background:#FFD700;
+    color:#000;
+    border:none;
+    border-radius:50px;
+    font-weight:700;
+    cursor:pointer;
+    transition:0.3s;
+}
+.btn:hover{
+    transform:scale(1.1);
+    box-shadow:0 0 30px #FFD700;
+}
+.section{
+    padding:100px 20px;
+    text-align:center;
+}
+.title{
+    font-size:2.5em;
+    margin-bottom:40px;
+    color:#FFD700;
+}
+.cards{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+.card{
+    background:#111;
+    margin:15px;
+    padding:30px;
+    border-radius:15px;
+    max-width:280px;
+    transition:0.4s;
+    border:1px solid #222;
+}
+.card:hover{
+    transform:translateY(-15px);
+    box-shadow:0 0 30px rgba(255,215,0,0.3);
+}
+.highlight{
+    color:#FFD700;
+    font-weight:700;
+}
+.testimonials{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+.testimonial{
+    background:#111;
+    padding:25px;
+    margin:15px;
+    border-radius:15px;
+    max-width:250px;
+    border:1px solid #222;
+}
+.pricing{
+    background:#111;
+    padding:40px;
+    border-radius:20px;
+    display:inline-block;
+}
+.price{
+    font-size:3em;
+    color:#FFD700;
+}
+footer{
+    padding:40px;
+    text-align:center;
+    background:#000;
+    border-top:1px solid #222;
+}
+</style>
+</head>
+<body>
+
+<nav>
+<h2>VSP</h2>
+<div>
+<a href="#">Início</a>
+<a href="#conteudo">Conteúdo</a>
+<a href="#beneficios">Benefícios</a>
+<a href="#depoimentos">Depoimentos</a>
+<a href="#comprar">Comprar</a>
+</div>
+</nav>
+
+<header>
+<h1>Vida Sem Pecado</h1>
+<p>Um método avançado para dominar sua mente, eliminar tentações e viver com disciplina extrema.</p>
+<p>Se você está cansado de cair nos mesmos erros, perder o controle e sentir que poderia ser muito mais, este método foi feito exatamente para você.</p>
+<button class="btn" onclick="comprar()">QUERO TRANSFORMAR MINHA VIDA</button>
+</header>
+
+<section class="section" id="conteudo">
+<div class="title">O que você vai aprender</div>
+<div class="cards">
+<div class="card">Controle absoluto da mente</div>
+<div class="card">Como eliminar tentações</div>
+<div class="card">Disciplina inabalável</div>
+<div class="card">Rotina de alto desempenho</div>
+<div class="card">Mentalidade vencedora</div>
+</div>
+<p>Você vai entender como funciona o seu comportamento, como cortar padrões negativos e construir uma mente forte e resistente.</p>
+</section>
+
+<section class="section" id="beneficios">
+<div class="title">Por que esse método funciona?</div>
+<p>Esse não é apenas um e-book comum. É um <span class="highlight">sistema completo</span> criado para transformar sua vida de dentro pra fora, com estratégias práticas e comprovadas.</p>
+<p>Diferente de conteúdos rasos, aqui você terá um passo a passo claro para aplicar no seu dia a dia e ver resultados reais.</p>
+</section>
+
+<section class="section" id="depoimentos">
+<div class="title">Resultados reais</div>
+<div class="testimonials">
+<div class="testimonial">"Minha disciplina mudou totalmente."</div>
+<div class="testimonial">"Nunca mais fui o mesmo depois disso."</div>
+<div class="testimonial">"Simplesmente poderoso."</div>
+</div>
+<p>Pessoas comuns estão tendo resultados extraordinários aplicando esse método.</p>
+</section>
+
+<section class="section">
+<div class="title">O que você recebe</div>
+<p>Ao adquirir hoje, você terá acesso imediato a um material direto, profundo e extremamente prático.</p>
+<p>Sem enrolação. Sem teoria inútil. Apenas o que realmente funciona.</p>
+</section>
+
+<section class="section" id="comprar">
+<div class="title">Comece agora</div>
+<div class="pricing">
+<p>Acesso imediato</p>
+<div class="price">R$19,90</div>
+<p>Pagamento único. Sem mensalidade.</p>
+<button class="btn" onclick="comprar()">COMPRAR AGORA</button>
+</div>
+</section>
+
+<footer>
+<p>© 2026 Vida Sem Pecado | Todos os direitos reservados</p>
+</footer>
+
+<script>
+function comprar(){
+window.location.href = "https://pay.kiwify.com.br/D3SjyCP";
+}
+
+window.addEventListener("scroll",()=>{
+ document.querySelectorAll('.card').forEach(card=>{
+  let pos = card.getBoundingClientRect().top;
+  if(pos < window.innerHeight-50){
+   card.style.opacity=1;
+   card.style.transform="translateY(0)";
+  }
+ })
+})
+
+const canvas=document.createElement("canvas");
+document.body.appendChild(canvas);
+canvas.style.position="fixed";
+canvas.style.top=0;
+canvas.style.left=0;
+canvas.style.zIndex=-1;
+const ctx=canvas.getContext("2d");
+canvas.width=window.innerWidth;
+canvas.height=window.innerHeight;
+let particles=[];
+for(let i=0;i<80;i++){
+ particles.push({x:Math.random()*canvas.width,y:Math.random()*canvas.height,r:Math.random()*2})
+}
+function draw(){
+ ctx.clearRect(0,0,canvas.width,canvas.height);
+ ctx.fillStyle="#FFD700";
+ particles.forEach(p=>{
+  ctx.beginPath();
+  ctx.arc(p.x,p.y,p.r,0,Math.PI*2);
+  ctx.fill();
+  p.y+=0.5;
+  if(p.y>canvas.height)p.y=0;
+ })
+ requestAnimationFrame(draw);
+}
+draw();
+</script>
+
+</body>
+</html>
